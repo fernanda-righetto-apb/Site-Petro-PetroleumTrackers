@@ -1,5 +1,7 @@
 const btnPocos = document.querySelector('#btnPocos');
 const infoPocos = document.querySelector('#info-pocos');
+const elementosSelecionados = document.querySelector('#elementos-selecionados');
+let contadorElementosSelecionados = 0;
 
 btnPocos.addEventListener('click', () => {
     if(btnPocos.checked){
@@ -9,12 +11,12 @@ btnPocos.addEventListener('click', () => {
         infoPocos.style.display ='block';
         info.style.backgroundImage="url(img/informacoes.jpg)";
         detalhesPoco.style.display = 'none';
-       
+       elementosSelecionados.innerHTML = `Elemetos selecionados: ${contadorElementosSelecionados += 1} `;
     } else if(btnBlocos.checked || btnCampos.checked || btnBacia.checked) {
 
-        poco.setAttribute('class', 'none');
-        infoPocos.style.display ='none';   
-           
+        poco.style.display = 'none';
+        infoPocos.style.display ='none';
+        elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados -= 1}`;   
     } 
     /*else if(btnCampos.checked) {
 
@@ -27,8 +29,9 @@ btnPocos.addEventListener('click', () => {
     }*/
     else {
         info.setAttribute('class', 'informacoes');
-        poco.setAttribute('class', 'none');
+        poco.style.display = 'none';
         infoPocos.style.display ='none';
+        elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados -= 1}`;
     }
 
     mapMaker.setAttribute('class', 'none');

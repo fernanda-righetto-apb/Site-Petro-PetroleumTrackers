@@ -32,6 +32,79 @@
 }
 
 @media screen and (max-width: 2560px){
+    
+    /* Filtro do Mapa em Zoom */
+
+
+        .filtro2{
+            position: absolute;
+            right: 116px;
+            bottom: 80px;
+            width: 409px;
+            border: 4px solid green;
+            border-radius: 25px 25px 0 0;
+            padding-bottom: 10px;
+            z-index: 1;
+        }
+
+        .tituloNoCentro{
+            display: flex;
+            justify-content: center;
+        }
+
+        .titulo2{
+
+            width: 190px;
+            font-size: 25px;
+        }
+
+        .txt2{
+            
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 700;
+            font-size: 15px;
+        }
+
+        .peneira2{
+
+            grid-template-columns: 10% 32% 58%;
+        }
+
+        .peneira3{
+
+            align-items: center;
+        }
+
+        .peneira3 h3{
+
+            text-align: left;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #000;
+        }
+
+        .input2{
+
+            border-radius: 4px;
+            width: 175px;
+            height: 38px;
+        }
+
+        .peneira4{
+
+            grid-template-columns: 45% 55%;
+        }
+
+        .btn3{
+
+            background-color: #4EAB7F;
+            color: #000;
+            width: 155px;
+            height: 38px;
+        }
+    /* Filtro do Mapa em Zoom */
+    
     .btnMenu{
         display: none;
     }
@@ -91,6 +164,7 @@
 }
 
 @media screen and (max-width: 1440px){
+    
     .header1 .item{
         display: none;
     }
@@ -613,6 +687,13 @@
         margin: 0;
         padding: 0;
         border: solid 6px #4EAB7F;
+        flex-direction: column;
+    }
+
+    .informacoes{
+        width: 100%;
+        height: 60%;
+        margin: 25% 0 0 0;
     }
     .filtro {
         display: none;
@@ -781,17 +862,14 @@
         /* border: dashed 2px #000; */
     }
     .mapa__svg {
-        height: 80vh;
+        height: 70vh;
     }
     .checkbox {
+        gap: 8vw;
+        position: static;
         flex-direction: row;
-        top: 70vh;
-        left: 0em;
         margin: auto;
         text-align: center;
-        width: 80%;
-        left: 7vw;
-        gap: 8vw;
     }
     .switch2 {
         width: 12vw;

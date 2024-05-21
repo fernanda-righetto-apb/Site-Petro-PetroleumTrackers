@@ -25,6 +25,7 @@
         <link rel="stylesheet" href="style/campos.css">
         <link rel="stylesheet" href="style/zoom.css">
         <link rel="stylesheet" href="style/infoElementos.css">
+        <link rel="stylesheet" href="style/pocos.css">
     <body onload="teste()">
       <header id="header">
         
@@ -206,10 +207,7 @@
                         
                         
                     </svg>
-
-                    <label class="elementosSelecionados">Elementos selecionados: 0</label>
-                    <img class="btnFullscreen" id="btnFullscreen" src="img/image-44.png"></img>
-                   
+                    
                     <div class="checkbox">
                         <div>
                             <label class="switch2">
@@ -240,8 +238,61 @@
                             <label class="checkbox__name">Bacias</label>
                         </div>
                     </div>
+
+                    <label class="elementosSelecionados" id="elementos-selecionados">Elementos selecionados: 0</label>
+                    <img class="btnFullscreen" id="btnFullscreen" src="img/image-44.png"></img>
+                   
+                    
+
                     <img src="img/filtro.png" class="img__filtro" id="imgFiltro">
                     <button  ><img src="img/Group 2.svg" class="duvida" onclick="AbreModalInfos()" ></button>
+
+                    <!-- Filtro do Mapa em Zoom -->
+                    <div class="filtro2 filtro3" id="filtro3">
+                        <div class="tituloNoCentro">
+                        <h1 class="titulo2">FILTRAR POR</h1>
+                        </div>
+                        <h4 class="txt2 busca">Preencha os campos abaixo de acordo com sua necessidade de busca.</h4>
+                        <div class="peneira2 peneira3">
+                            <div class="tooltip interrogacao" data-text="Nome fantasia do operador(concessionário), ou seja, é a empresa responsável pelo poço.">?</div>
+                            <h3>Operador</h3>
+                            <input class="input2" id="filtro-operador3">
+                        </div>
+                        <div class="peneira2 peneira3">
+                            <div class="tooltip interrogacao" data-text="Finalidade principal original do poço. Há dez categorias! Exemplo: Poço Exploratório Pioneiro">?</div>
+                            <h3>Tipo</h3>
+                            <input class="input2" id="filtro-tipo3">
+                        </div>
+                        <div class="peneira2 peneira3">
+                            <div class="tooltip interrogacao" data-text="Tipo de material, isto é, fluído a ser produzido/extraído do poço: gás natual ou óleo.">?</div>
+                            <h3>Terra_Mar</h3>
+                            <select class="input2" id="filtro-terra-mar3">
+                                <option>Selecione a opção</option>
+                                <option>T</option>
+                                <option>M</option>
+                            </select>
+                        </div>
+                        <div class="peneira2 peneira3">
+                            <div class="tooltip interrogacao" data-text="Qualificação do poço de acordo com o estado mecânico atual e condição operacional. Exemplo: fechado, aberto, ativo, desativado.">?</div>
+                            <h3>Situação</h3>
+                            <input  class="input2" id="filtro-situacao3">
+                        </div>
+                        <div class="peneira2 peneira3">
+                            <div class="tooltip interrogacao" data-text="Local onde estão situados os poços, blocos, bacias e campos (quando aplicável).">?</div>
+                            <h3>Estado</h3>
+                            <input  class="input2" id="filtro-estado3">
+                        </div>
+                        <div class="peneira2 peneira4">
+                            <div></div>
+                            <button class="btn3" id="btn-filtrar3">Filtrar</button>
+                        </div>
+                        <h4 class="txt2 txt2-inferior">Para informações sobre os <a class="filtro2__links">Poços, Blocos, Campos</a> e <a class="filtro2__links">Bacias</a> clique abaixo</h4>
+                        <div class="btn_container2">
+                            <button class="btn4">infos</button>
+                        </div>
+                    </div>
+                    <!-- Filtro do Mapa em Zoom -->
+
                     </div>
                     <div class="informacoes" id="info">
                         <button id="fechaInfo">VOLTAR</button>
@@ -322,7 +373,6 @@
                         </div>
                     </div>
                 </div>
-                    <!--<div id="filtro2" class="filtro2"></div> -->
                     <div class="filtro2" id="filtro2">
                         <div class="tituloNoCentro">
                         <h1 class="titulo2">FILTRAR POR</h1>
@@ -331,41 +381,35 @@
                         <div class="peneira2 peneira3">
                             <div class="tooltip interrogacao" data-text="Nome fantasia do operador(concessionário), ou seja, é a empresa responsável pelo poço.">?</div>
                             <h3>Operador</h3>
-                            <input class="input2">
+                            <input class="input2" id="filtro-operador2">
                         </div>
                         <div class="peneira2 peneira3">
                             <div class="tooltip interrogacao" data-text="Finalidade principal original do poço. Há dez categorias! Exemplo: Poço Exploratório Pioneiro">?</div>
-                            <h3>Categoria</h3>
-                            <input class="input2">
+                            <h3>Tipo</h3>
+                            <input class="input2" id="filtro-tipo2">
                         </div>
                         <div class="peneira2 peneira3">
                             <div class="tooltip interrogacao" data-text="Tipo de material, isto é, fluído a ser produzido/extraído do poço: gás natual ou óleo.">?</div>
                             <h3>Terra_Mar</h3>
-                                <select class="input2" id="filtro-terra-marr">
-                                    <option>Selecione a opção</option>
-                                    <option>T</option>
-                                    <option>M</option>
-                                </select>
-                            <!-- <input class="input2"> -->
+                            <select class="input2" id="filtro-terra-mar2">
+                                <option>Selecione a opção</option>
+                                <option>T</option>
+                                <option>M</option>
+                            </select>
                         </div>
                         <div class="peneira2 peneira3">
                             <div class="tooltip interrogacao" data-text="Qualificação do poço de acordo com o estado mecânico atual e condição operacional. Exemplo: fechado, aberto, ativo, desativado.">?</div>
                             <h3>Situação</h3>
-                            <input  class="input2">
+                            <input  class="input2" id="filtro-situacao2">
                         </div>
                         <div class="peneira2 peneira3">
                             <div class="tooltip interrogacao" data-text="Local onde estão situados os poços, blocos, bacias e campos (quando aplicável).">?</div>
                             <h3>Estado</h3>
-                            <input  class="input2">
+                            <input  class="input2" id="filtro-estado2">
                         </div>
-                        <!-- <div class="peneira2 peneira3">
-                            <div class="interrogacao">?</div>
-                            <h3>Nome</h3>
-                            <input class="input2">
-                        </div> -->
                         <div class="peneira2 peneira4">
                             <div></div>
-                            <button class="btn3">Filtrar</button>
+                            <button class="btn3" id="btn-filtrar2">Filtrar</button>
                         </div>
                         <h4 class="txt2 txt2-inferior">Para informações sobre os <a class="filtro2__links">Poços, Blocos, Campos</a> e <a class="filtro2__links">Bacias</a> clique abaixo</h4>
                         <div class="btn_container2">

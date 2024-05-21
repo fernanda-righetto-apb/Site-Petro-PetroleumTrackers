@@ -13,11 +13,11 @@ function mostraFiltro(){
         header2.setAttribute('class', 'header2 opaco');
         mapa.setAttribute('class', 'mapa opaco');
         footer.setAttribute('class', 'footer opaco');
-        filtro2.setAttribute('class', 'filtro2 filtro2-aparecer');
+        filtro2.style.display = 'block';
         
         contador3 = false;
     } else {
-        filtro2.setAttribute('class', 'filtro2');
+        filtro2.style.display = 'none';
         header2.setAttribute('class', 'header2 naoOpaco');
         mapa.setAttribute('class', 'mapa naoOpaco');
         footer.setAttribute('class', 'footer naoOpaco');
@@ -29,3 +29,9 @@ imgfiltro_menu.addEventListener('click', () => {
     mostraFiltro(); 
 })
 
+function naoOpaco(){
+    header2.setAttribute('class', 'header2 naoOpaco');
+    mapa.setAttribute('class', 'mapa naoOpaco');
+    footer.setAttribute('class', 'footer naoOpaco');
+    contador3 = true;
+}

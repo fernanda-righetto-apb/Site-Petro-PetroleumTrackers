@@ -9,6 +9,7 @@ let contadorPesquisar = true;
 imgPesquisa.addEventListener('click', () => {
     if(pesquisa.value === '1-NAB-6-SE52'){
         poco.style.display = 'block';
+        elementosSelecionados.innerHTML = 'Elementos selecionados: 1';
     }
 });
 
@@ -16,6 +17,7 @@ document.addEventListener('keypress', function(event) {
     if(event.key === 'Enter'){
         if(pesquisa.value === '1-NAB-6-SE52'){
             poco.style.display = 'block';
+            elementosSelecionados.innerHTML = 'Elementos selecionados: 1';
         }
     }
 })
