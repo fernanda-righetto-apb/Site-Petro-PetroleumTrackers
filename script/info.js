@@ -25,6 +25,7 @@ fechaInfo.addEventListener('click', () => {
 
         info.setAttribute('class', 'informacoes');
         mapa__svg.setAttribute('class', 'mapa__svg');
+        elementosSelecionados.innerHTML = 'Elementos selecionados: 0';
     }
     
     
