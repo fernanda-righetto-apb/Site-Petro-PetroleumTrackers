@@ -2,6 +2,18 @@ const btn_filtrar = document.querySelector('#btn-filtrar');
 const btn_filtrar2 = document.querySelector('#btn-filtrar2');
 const imgPesquisa = document.querySelector('#imgPesquisa');
 const btn_filtrar3 = document.querySelector('#btn-filtrar3');
+const avisoModalFiltro = document.querySelector('#avisoModalFiltro');
+
+function modalFechaAviso(){
+    var modal = document.getElementById("avisoModalFiltro");
+    modal.style.display = "none";
+  }
+  
+  function modalAbreAviso(){
+    var modal = document.getElementById("avisoModalFiltro");
+    modal.style.display = "block";
+  }
+  
 
 btn_filtrar.addEventListener('click', () => {
 
@@ -23,7 +35,8 @@ btn_filtrar.addEventListener('click', () => {
     
     else{
         poco.style.display = 'none';
-        alert('Não foi encontrado nenhum poço correspondente!');
+        modalAbreAviso();
+        // alert('Não foi encontrado nenhum poço correspondente!');
     }
 })
 
@@ -51,7 +64,8 @@ btn_filtrar2.addEventListener('click', () => {
     
     else{
         poco.style.display = 'none';
-        alert('Não foi encontrado nenhum poço correspondente!');
+        modalAbreAviso();
+        // alert('Não foi encontrado nenhum poço correspondente!');
     }
 })
 
@@ -75,7 +89,8 @@ btn_filtrar3.addEventListener('click', () => {
     
     else{
         poco.style.display = 'none';
-        alert('Não foi encontrado nenhum poço correspondente!');
+        modalAbreAviso();
+        // alert('Não foi encontrado nenhum poço correspondente!');
     }
 })
 
@@ -95,3 +110,4 @@ imgPesquisa.addEventListener('click', () => {
 
     
 })
+

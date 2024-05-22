@@ -147,7 +147,29 @@
             
         </div>
     </div>
-<!--Fim da modal para o botão info localizado no fltro (desktop/tablet) --> 
+<!--Fim da modal para o botão info localizado no fltro (desktop/tablet) -->
+
+<!--Início da modal para caso não tenha localizado pelo Filtrar o poço -->
+
+        <div class="modal_aviso" id="avisoModalFiltro">
+            
+
+            <div class="modal_aviso_Filtro"> 
+                <div class="filtro_aviso">
+                    <div class="imagem_aviso"> 
+                        <button class="fechaAviso" onclick="modalFechaAviso()"><img src="./img/Group 37.jpg" style="height: 30px;"></button>
+                    </div> 
+                    <div class="txt_aviso">
+                        <h1 class="tituloAviso">AVISO</h1>
+                        <p class="p1">Não foi encontrado nenhum posto correspondente!</p>
+                        <p class="p2">Selecione novamente o campo desejado!</p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+ 
+<!--Fim da modal para caso não tenha localizado pelo Filtrar o poço -->
+               
             <div class="mapa" id="mapa">
                 <div class="mapa__svg" id="mapa__svg">
                     <svg viewBox="0 -20 785 840" height="100%" width="100%">
