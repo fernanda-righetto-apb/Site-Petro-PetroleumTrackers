@@ -7,7 +7,7 @@ const pesquisa = document.querySelector('.filtro-pesquisa');
 let contadorPesquisar = true;
 
 imgPesquisa.addEventListener('click', () => {
-    if(pesquisa.value === '1-NAB-6-SE52'){
+    if(pesquisa.value === '1-SHEL-35A-RJS'){
         poco.style.display = 'block';
         elementosSelecionados.innerHTML = 'Elementos selecionados: 1';
     }
@@ -15,7 +15,7 @@ imgPesquisa.addEventListener('click', () => {
 
 document.addEventListener('keypress', function(event) {
     if(event.key === 'Enter'){
-        if(pesquisa.value === '1-NAB-6-SE52'){
+        if(pesquisa.value === '1-SHEL-35A-RJS'){
             poco.style.display = 'block';
             elementosSelecionados.innerHTML = 'Elementos selecionados: 1';
         }

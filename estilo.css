@@ -428,3 +428,75 @@ transform: scaleX(1);
     font-weight:normal;
   }
 /* fim do css modal do btn info no filtro*/
+
+.modal_aviso{
+  display: none;
+  position: fixed;
+  z-index: 3;
+  padding-top: 5%;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  right: 0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.24);
+}
+
+.modal_aviso_Filtro{
+ 
+  margin: auto;
+  width: 20%;
+  height: 20%;
+  background-color: #f8f8f8;
+  border-radius: 2rem;
+  border: 2px solid #21593B;
+  align-items: center;
+  box-shadow: 0 4px 4px -2px #989898;
+  -moz-box-shadow: 0 4px 4px -2px #989898;
+  -webkit-box-shadow: 0 4px 4px -2px #989898;
+}
+
+
+.tituloAviso{
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
+  /* font-size: 100%; */
+  font-size: 1.5rem;
+  border-bottom: 3px solid #21593B;
+  width: 190px;
+  color: #21593B;
+  text-align: center;
+}
+
+
+
+.filtro_aviso .imagem_aviso{
+
+  display: flex;
+  justify-content: flex-end;
+  margin: 10px 10px 0 0;
+}
+
+.filtro_aviso .txt_aviso{
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+
+.p1{
+  font-size: 90%;
+  text-align: center;
+  padding: 1rem;
+
+}
+
+.p2{
+  font-size: 85%;
+  text-align: center;
+  color: #21593B;
+  font-weight: bold;
+}

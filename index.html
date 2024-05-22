@@ -148,6 +148,48 @@
         </div>
     </div>
 <!--Fim da modal para o botão info localizado no fltro (desktop/tablet) --> 
+    <!--Início da modal para caso não tenha localizado pelo Filtrar o poço -->
+
+
+
+
+    <div class="modal_aviso" id="avisoModalFiltro">
+
+            
+
+
+
+
+        <div class="modal_aviso_Filtro"> 
+
+            <div class="filtro_aviso">
+
+                <div class="imagem_aviso"> 
+
+                    <button class="fechaAviso" onclick="modalFechaAviso()"><img src="./img/Group 37.jpg" style="height: 30px;"></button>
+
+                </div> 
+
+                <div class="txt_aviso">
+
+                    <h1 class="tituloAviso">AVISO</h1>
+
+                    <p class="p1">Não foi encontrado nenhum posto correspondente!</p>
+
+                    <p class="p2">Selecione novamente o campo desejado!</p>
+
+                </div>
+
+            </div>   
+
+        </div>
+
+    </div>
+
+
+
+<!--Fim da modal para caso não tenha localizado pelo Filtrar o poço -->
+
             <div class="mapa" id="mapa">
                 <div class="mapa__svg" id="mapa__svg">
                     <svg viewBox="0 -20 785 840" height="100%" width="100%">
@@ -186,7 +228,7 @@
                             <image class="icone-bacia" id="icone-bacia-do-parana" href="img/bacia.png" x="410" y="570"></image>
                             <image id="blocos" class="blocos" href="img/bloco.svg" x="380" y="500"></image>
                             <image id="campos" class="campos" href="img/campo.svg" x="680" y="485"></image>
-                            <image id="poco" class="none" href="img/oilpump.png" x="660" y="570" width="20"></image>
+                            <image id="poco" class="none" href="img/oilpump.png" x="660" y="570"></image>
                             <image id="icone-campos" class="none" href="img/campo.png" x="655" y="470" width="30"></image>
                         </g>
                         
@@ -300,9 +342,9 @@
                     </div>
                     <div class="informacoes" id="info">
                         <button id="fechaInfo">VOLTAR</button>
-                        <div class="info-pocos" id="info-pocos">
+                        <div class="info-all" id="info-pocos">
                             <h2>Poços</h2>
-                            <h6>1-SHEL-35A-RJS</h6>
+                            <h6 id="info-pocos-h6">1-SHEL-35A-RJS</h6>
                         </div>
                         <div class="info-Elementos detalhesPoco">
                             <h4>1-SHEL-35A-RJS</h4>
@@ -324,7 +366,7 @@
                                     <li><strong>Data Atualização Dados -</strong></li>
                                 </ul>
                         </div>
-                        <div class="info-blocos" id="info-blocos">
+                        <div class="info-all" id="info-blocos">
                             <h2>Blocos</h2>
                             <h6>PAR-T-215</h6>
                         </div>
@@ -337,7 +379,7 @@
                                 </ul>
                         </div>
 
-                        <div class="info-campos" id="info-campos">
+                        <div class="info-all" id="info-campos">
                             <h2>Campos</h2>
                             <h6>Campo Grande</h6>
                         </div>
@@ -357,7 +399,7 @@
                                 </ul>
                         </div>
 
-                        <div class="info-bacias" id="info-bacias">
+                        <div class="info-all" id="info-bacias">
                             <h2>Bacias</h2>
                             <h6>Paraná</h6>
                         </div>
@@ -653,5 +695,6 @@
     <script src="script/campos.js"></script>
     <script src="script/zoom.js"></script>
     <script src="script/poco.js"></script>
+    <script src="script/over.js"></script>
 </body>
 </html>
