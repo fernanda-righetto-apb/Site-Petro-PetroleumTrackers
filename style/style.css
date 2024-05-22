@@ -275,6 +275,11 @@
         /* font-size: 16px; */
         min-height: 10vh;
     }
+
+    .modal_aviso_Filtro{
+        width: 28%;
+        height: 28%;
+    }
 }
 
 
@@ -923,6 +928,11 @@
     }
     input:checked+.slider:before {
         transform: translateX(5vw);
+    }
+
+    .modal_aviso_Filtro{
+        width: 55%;
+        height: 28%;
     }
 }
 
