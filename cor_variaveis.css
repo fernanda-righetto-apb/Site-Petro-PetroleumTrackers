@@ -1,0 +1,25 @@
+:root {
+    --verde_escuro:  #21593B;
+    --verde_escuro_Dm_claro:  #21593B;
+    --verde: #1E8409;
+    --verde_claro: #4EAB7F;
+    --amarelo: #FFD200;
+    --amarelo_Dm_escuro: #FFD200;
+    --branco: #ffffff;
+    --texto_Preto: #000000;
+    --lightblue: #a5d2e0;
+  }
+  
+  .dark-mode {
+      --verde_escuro:  #3D3D3D;
+      --verde_escuro_Dm_claro:  rgb(143, 143, 143);
+      --verde: #3D3D3D;
+      --verde_claro: #202020;
+      --amarelo: #C4C4C4;
+      --amarelo_Dm_escuro: #3D3D3D;
+      --lightblue: #E4E4E4;
+      
+  }
+  *{
+      transition: all 0.5s;
+    }

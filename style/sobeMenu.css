@@ -1,5 +1,5 @@
 .menuSobe{
-    background-color: rgb(247, 247, 247);
+
     width: 0vw;
     height:0vh;
     transition: all .5s ease;
@@ -65,14 +65,14 @@
 
 
 
-.li a {   color: rgb(62, 146, 83);}
+.li a {   color: var(--verde);}
 
 
 .nav {
-  color: rgb(62, 146, 83);
+  color: var(--verde);
   width : 80vw; 
   margin : 40px auto; 
-  border-left: 1.5px solid  rgb(62, 146, 83);
+  border-left: 1.5px solid  var(--verde);
 }
 
 .span {
@@ -102,7 +102,7 @@
 .slide li {padding : 15px;}
 
 .btn_filtroSobe{
-    color: rgb(62, 146, 83);
+    color: var(--verde);
     width: 100%;
     text-align: left;
     padding: 15px;

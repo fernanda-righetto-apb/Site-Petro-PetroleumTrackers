@@ -3,7 +3,7 @@
     .sobreOsElementos{
         width: 100vw;
         height: 100vh;
-        background-color: #CECECE;
+
         position: fixed;
         top: 1px;
         z-index: 4;

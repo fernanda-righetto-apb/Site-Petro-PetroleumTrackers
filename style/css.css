@@ -21,8 +21,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #BEC3C3;
-  border: 2px solid #A7AFB0;
+
   box-shadow: 0 1px 2px #8f8f8f;
   transition: .4s;
   border-radius: 30px;
@@ -36,14 +35,10 @@
   border-radius: 20px;
   left: 0.18em;
   bottom: 0.13em;
-  background-color: #ffffff;
+
   transition: .4s;
 }
 
-input:checked + .slider {
-  background-color: #ffc222;
-  border: 2px solid #E7BC3D;
-}
 
   
   /*input:focus + .slider {

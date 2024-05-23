@@ -20,6 +20,15 @@ button.addEventListener('click', () => {
 function dark() {
   var element = document.body;
   element.classList.toggle("dark-mode");
+  
+  var dk = body.className;
+  var img = document.getElementById("");
+
+  if(dk=="dark-mode"){
+    alert("deu boa")
+  }else{
+    alert("deu não")
+  }
 }
 
 function modalFecha(){

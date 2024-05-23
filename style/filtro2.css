@@ -3,16 +3,16 @@
     right: 150px;
     bottom: 80px;
     border-radius: 3em;
-    background-color: #ffffff;
+
     width: 450px;
     display: none;
 }
 
 .titulo2{
-    border-top: 7px solid #FFD200;
+
     text-align: center;
     margin: 5%;
-    color: #4EAB7F;
+
 }
 
 .txt2{
@@ -36,8 +36,7 @@
 }
 
 .btn3{
-    background-color: #4EAB7F;
-    color: #21593B;
+
     height: 4.3vh;
     font-size: 1.3em;
     font-weight: bold;
@@ -51,8 +50,7 @@
 }
 
 .btn4{
-    background-color:#4EAB7F;
-    color: #21593B;
+
     height: 3vh;
     width: 5vw;
     font-size: 1em;
@@ -62,16 +60,15 @@
 }
 
 .filtro2__links{
-    color: #4EAB7F;
+
 }
 
 .interrogacao{
     font-family: 'Open Sans' sans-serif;
     font-size: 18px;
     font-weight: 700;
-    color: #fff;
+
     width: 21px;
     height: 21px;
-    background-color: #0F4DC5;
     border-radius: 10px;
 }

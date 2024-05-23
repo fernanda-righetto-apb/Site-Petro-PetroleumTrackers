@@ -4,6 +4,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="estilo.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="colors.css" media="screen" />
+        <link rel="stylesheet" type="text/css" href="cor_variaveis.css" media="screen" />
         <link rel="stylesheet" type="text/css" href="teste.css" media="screen" />
         <link rel="stylesheet" href="style/fullscreen.css">
         <link rel="stylesheet" href="style/informacoes.css">
@@ -31,7 +33,7 @@
         
         <div class="header2" id="header2">
             <div>
-                <h4 class="c2">Você está em: <a style="color: #4EAB7F;">SITE PETROBRAS</a></h4>
+                <h4 class="c2">Você está em: <a style="color: var(--verde_claro)">SITE PETROBRAS</a></h4>
             </div>
 
             <div></div>
@@ -60,18 +62,18 @@
 
         <div class="header1">
             <div>
-                <img class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Petrobras_horizontal_logo.svg/1280px-Petrobras_horizontal_logo.svg.png" height="30vh">
+                <img id="dk" class="img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Petrobras_horizontal_logo.svg/1280px-Petrobras_horizontal_logo.svg.png" height="30vh">
             </div>
 
             <div></div>
 
-            <img class="btnMenu"  onclick="sobeMenu('mapa')" src="img/menu2.png"></img>
+            <img class="btnMenu"  onclick="sobeMenu('mapa')" src="img/menu2.png" id="dk"></img>
 
             <div>
                 <section class="grid grid-template-columns-1">
                     <h6 class="item"><a href="https://petrobras.com.br/pt/quem-somos/">Quem Somos</a></h6>
                     <h6 class="item"><a href="https://petrobras.com.br/pre-sal/">Pré-Sal</a></h6>
-                    <h6 class="item"><a href="https://petrobras.com.br/pt/sociedade-e-meio-ambiente/">Sociedade e Meio Ambiente</a></h6>
+                    <h6 class="item"><a href="https://petrobras.com.br/pt/sociedade-e-meio-ambiente/">Sustentabilidade</a></h6>
                     <h6 class="item"><a href="https://tecnologia.petrobras.com.br/?_ga=2.16318134.183531101.1695930852-473754522.1695930852&_gl=1*gz2mg4*_ga*NDczNzU0NTIyLjE2OTU5MzA4NTI.*_ga_9TG5WL85H3*MTY5NTkzMDg1Mi4xLjEuMTY5NTkzMTI5Ni4zMy4wLjA.">Tecnologia e Inovação</a></h6>
                     <h6 class="item"><a href="https://transparencia.petrobras.com.br/?_gl=1*2porjz*_ga*NDczNzU0NTIyLjE2OTU5MzA4NTI.*_ga_9TG5WL85H3*MTY5NTkzMDg1Mi4xLjEuMTY5NTkzMTMxMi4xNy4wLjA.">Acesso à Informação</a></h6>
                     <h6 class="item"><a href="https://www.investidorpetrobras.com.br/?_ga=2.82025366.183531101.1695930852-473754522.1695930852&_gl=1%2A1j4c6ba%2A_ga%2ANDczNzU0NTIyLjE2OTU5MzA4NTI.%2A_ga_9TG5WL85H3%2AMTY5NTkzMDg1Mi4xLjEuMTY5NTkzMTMyMy42LjAuMA..">Investidores</a></h6>
@@ -89,7 +91,7 @@
             <div class="btn_x"><button onclick="modalFecha()"><img src="x.png" style="height: 50px;"></button></div>
 
             <div class="modal_recheio">
-                <div class="img_txt"><h1 class="h1">POÇOS</h1> <img src="img/modal_img1.svg" alt=""></div>
+                <div class="img_txt"><h1 class="h1">POÇOS</h1> <img src="img/modal_img1.svg" alt="" ></div>
                 <div class="cinza"><h4 class="h4">Perfuração na superficie terrestre utilizada para extração e produção de petróleo</h4></div>
 
                 <div class="img_txt" ><h1 class="h1">BLOCOS</h1><img src="img/modal_img2.svg" alt=""></div>
@@ -166,7 +168,7 @@
 
                 <div class="imagem_aviso"> 
 
-                    <button class="fechaAviso" onclick="modalFechaAviso()"><img src="./img/Group 37.jpg" style="height: 30px;"></button>
+                    <button class="fechaAviso" onclick="modalFechaAviso()"><img src="./img/Group 37.jpg" style="height: 30px;" id="dk"></button>
 
                 </div> 
 
@@ -225,7 +227,7 @@
                             <path d="M35.5 238L2 274.985L18.362 276.422L20.0089 272.59L21.227 280.494L35.5 294.147L41.4184 290.314L45 291.272L51.5 296.781L56.2404 301.093L61.181 304.446L72 312.35L79.2967 295.584H67.4941L61.181 291.272V283.608L80.9436 272.59L90.276 278.338L94.3932 274.985L102.628 276.422L109.49 271.871L116.077 272.59L121.018 278.338L106.47 289.117L111.411 291.272L102.628 301.093L100.432 304.446H94.3932L95.7656 308.278L86.4332 316.662L90.276 320.015L80.9436 326.961L79.2967 332.5L84.2374 337.5L100.432 323.129L102.628 312.35L117.45 301.093L131.448 289.117L138.31 278.338V271.871L153.681 250.314L157.524 232.35L149.289 220.614L153.681 209.356L147.917 201.931V194.266L138.31 179.895L150.662 173.428H157.524L161.092 170.314H176.737L181.404 148.5L183.325 140.135L184.972 135.105L183.325 125.524L187.442 118.578L191.559 111.632L184.972 103.967L188.266 102.53V97.2605L185.521 91.2725L188.266 88.6377H183.325L181.404 86.003L171.797 81.4521L176.737 88.6377L164.111 81.4521H157.524L153.956 76.6617L156.151 70.9132L150.662 73.0689L142.427 63.7275H136.663L133.918 56.0629H127.605L126.233 52.4701L122.39 54.8653L119.645 51.0329L110.862 52.4701L98.7849 46.482L110.862 41.4521L99.8828 34.7455L104 30.6737L99.8828 28.518V25.4042L96.3145 23.488L94.3932 1L79.2967 1L56.2404 17L52.9466 10H45L40.046 17L49.3783 36.9012L49.9273 41.4521L47.457 45.0449L49.3783 51.0329L56.2404 52.4701L45 70.9132L41.4184 76.6617L40.046 86.003L27.6944 135.105L29.8902 140.135L40.046 155.704L49.9273 171.751L57.4755 170.314L58.4362 185L65.0237 188.278L61.181 196.183L65.0237 199.057L71.6113 196.183V209.356L65.0237 220.614L35.5 238Z" fill="#E4C193" fill-opacity="0.95"/>
                             <path d="M191.559 111.632L184.972 103.967L188.266 102.53V97.2605L185.521 91.2725L188.266 88.6377H183.325L181.404 86.003L171.797 81.4521L176.737 88.6377L164.111 81.4521H157.524L153.956 76.6617L156.151 70.9132L150.662 73.0689L142.427 63.7275H136.663L133.918 56.0629H127.605L126.233 52.4701L122.39 54.8653L119.645 51.0329L110.862 52.4701L98.7849 46.482L110.862 41.4521L99.8828 34.7455L104 30.6737L99.8828 28.518V25.4042L96.3145 23.488L94.3932 1L79.2967 1L56.2404 17L52.9466 10H45L40.046 17L49.3783 36.9012L49.9273 41.4521L47.457 45.0449L49.3783 51.0329L56.2404 52.4701L45 70.9132L41.4184 76.6617L40.046 86.003L27.6944 135.105L29.8902 140.135L40.046 155.704L49.9273 171.751L65.0237 168.877L57.4755 170.314L58.4362 185L65.0237 188.278L61.181 196.183L65.0237 199.057L71.6113 196.183V209.356L65.0237 220.614L35.5 238L2 274.985L18.362 276.422L20.0089 272.59L21.227 280.494L35.5 294.147L41.4184 290.314L45 291.272L51.5 296.781L56.2404 301.093L61.181 304.446L72 312.35L79.2967 295.584H67.4941L61.181 291.272V283.608L80.9436 272.59L90.276 278.338L94.3932 274.985L102.628 276.422L109.49 271.871L116.077 272.59L121.018 278.338L106.47 289.117L111.411 291.272L102.628 301.093L100.432 304.446H94.3932L95.7656 308.278L86.4332 316.662L90.276 320.015L80.9436 326.961L79.2967 332.5L84.2374 337.5L100.432 323.129L102.628 312.35L117.45 301.093L131.448 289.117L138.31 278.338V271.871L153.681 250.314L157.524 232.35L149.289 220.614L153.681 209.356L147.917 201.931V194.266L138.31 179.895L150.662 173.428H157.524L161.092 170.314H176.737L181.404 148.5L183.325 140.135L184.972 135.105L183.325 125.524M191.559 111.632L183.325 125.524M191.559 111.632L187.442 118.578L183.325 125.524" stroke="black" stroke-opacity="0.3"/>  
                         </g>
-                            <image class="icone-bacia" id="icone-bacia-do-parana" href="img/bacia.png" x="410" y="570"></image>
+                            <image class="icone-bacia" id="icone-bacia-do-parana" href="img/bacia.png" x="410" y="570" ></image>
                             <image id="blocos" class="blocos" href="img/bloco.svg" x="380" y="500"></image>
                             <image id="campos" class="campos" href="img/campo.svg" x="680" y="485"></image>
                             <image id="poco" class="none" href="img/oilpump.png" x="660" y="570"></image>
@@ -472,7 +474,7 @@
             <div class="esconder"></div>
         <!-- FILTRO INPUTS E DO LADO DIREITO AO LADO DO MAPA -->
             <div class="filtro" id="filtro">
-                <h1 class="titulo" style="color: #4EAB7F;">FILTRAR POR</h1>
+                <h1 class="titulo" style="color: var(--verde_claro)">FILTRAR POR</h1>
                 <h4 class="txt">Preencha os campos abaixo de acordo com sua necessidade de busca.</h4>
                 <div class="peneira">
                     <h3>Operador</h3><input class="input" type="text" id="filtro-operador">
@@ -509,7 +511,7 @@
                 </div>
 
 
-                <h4 class="txt">Para informações sobre os <a style="color: #4EAB7F;">Poços, Blocos, Campos</a> e <a style="color: #4EAB7F;">Bacias</a> clique abaixo.</h4>
+                <h4 class="txt">Para informações sobre os <a style="color: var(--verde_claro)">Poços, Blocos, Campos</a> e <a style="color: var(--verde_claro)">Bacias</a> clique abaixo.</h4>
                 <div class="btn_container">
                     <button onclick="modalAbre()" class="btn2">infos</button>
                 </div>
@@ -550,7 +552,7 @@
      
      
                 <nav class="nav">  
-                    <div style="width: 100%;  border-left: 6px solid  rgb(253, 196, 10);">
+                    <div style="width: 100%;  border-left: 6px solid  var(--amarelo);">
                         
                         <button class="btn_filtroSobe" onclick="location.href='https://petrobras.com.br/com';" ><span class="span">Início</span></button>              
                     </div>
