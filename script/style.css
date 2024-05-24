@@ -1,8 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-#poco{
-    width: 20px;
-}
 
 .container-menu{
     display: none;
@@ -13,7 +10,6 @@
     position: relative;
 
 }
-
 
 
 .none{
@@ -28,80 +24,7 @@
     outline: none;
 }
 
-
 @media screen and (max-width: 2560px){
-    
-    /* Filtro do Mapa em Zoom */
-
-
-        .filtro2{
-            position: absolute;
-            right: 116px;
-            bottom: 80px;
-            width: 409px;
-  
-            border-radius: 25px 25px 0 0;
-            padding-bottom: 10px;
-            z-index: 1;
-        }
-
-        .tituloNoCentro{
-            display: flex;
-            justify-content: center;
-        }
-
-        .titulo2{
-
-            width: 190px;
-            font-size: 25px;
-        }
-
-        .txt2{
-            
-            font-family: 'Open Sans', sans-serif;
-            font-weight: 700;
-            font-size: 15px;
-        }
-
-        .peneira2{
-
-            grid-template-columns: 10% 32% 58%;
-        }
-
-        .peneira3{
-
-            align-items: center;
-        }
-
-        .peneira3 h3{
-
-            text-align: left;
-            font-family: 'Open Sans', sans-serif;
-            font-size: 18px;
-            font-weight: 700;
-  
-        }
-
-        .input2{
-
-            border-radius: 4px;
-            width: 175px;
-            height: 38px;
-        }
-
-        .peneira4{
-
-            grid-template-columns: 45% 55%;
-        }
-
-        .btn3{
-
-      
-            width: 155px;
-            height: 38px;
-        }
-    /* Filtro do Mapa em Zoom */
-    
     .btnMenu{
         display: none;
     }
@@ -135,7 +58,7 @@
         grid-template-columns: 50% 50%;
         text-align: center;
         font-size: 16px;
-        min-height: 9vh;
+        min-height: 5vh;
     }
     .footer_caixa{
         display: grid;
@@ -154,27 +77,10 @@
     .filtro{
         height: 610px;
     }
-
-    .peneira h3{
-        margin-top: 8px;
-    }
-
 }
 
 @media screen and (max-width: 1440px){
-    .modal_aviso_Filtro{
-
-        width: 28%;
-
-        height: 28%;
-
-    }
-    
     .header1 .item{
-        display: none;
-    }
-
-    #sobreOsElementos1{
         display: none;
     }
     
@@ -186,7 +92,6 @@
         display: block;
         /* width: 50vw;
         overflow-x: hidden; */
-        overflow-x: hidden;
     }
 
     .elementosSelecionados{
@@ -209,7 +114,7 @@
     }
 
     .pesquisa input{
-        width: 150px;
+        width: 200px;
         height: 20px;
     }
 
@@ -269,12 +174,7 @@
         min-height: 10vh;
     }
 
-    .modal_aviso_Filtro{
-        width: 28%;
-        height: 28%;
-    }
 }
-
 
 @media screen and (max-width: 1280px){
     .filtro{
@@ -283,7 +183,7 @@
 
     .filtro .titulo{
         margin: 8%;
- 
+
         font-size: 25px;
     }
 
@@ -323,12 +223,8 @@
         height: 3.5vh;
     }
 
-    .modal_aviso_Filtro{
-
-        width: 35%;
-
-        height: 35%;
-
+    .pesquisa input {
+        width: 150px;
     }
 
 }
@@ -339,7 +235,6 @@
 
         display: none;
     }
-
     .btnMenu{
         display: block;
     }
@@ -388,11 +283,11 @@
     }
 
     .peneira h3{
-        font-size: 12px;
+        font-size: 16px;
     }
 
     .peneira .input{
-        height: 30px;
+        height: 32px;
 
     }
 
@@ -435,22 +330,10 @@
     .footer{
         font-size: 15px;
     }
-
-    .modal_aviso_Filtro{
-
-        width: 35%;
-
-        height: 25%;
-
-    }
 }
 
 @media screen and (max-width: 820px){
     .container-menu{
-        display: block;
-    }
-
-    #sobreOsElementos1{
         display: block;
     }
 
@@ -499,7 +382,6 @@
         width: 100%;
         margin: 35px 0 0 0;
         max-height: none;
-        
     }
     .filtro{
         height: auto;
@@ -507,19 +389,169 @@
         width: 70%;
         margin: 0 0 50px 0;
     }
+    
+    
+    .pesquisa1{
+        display: none;
+    }
+    .mapa{
+        width: 100vw;
+        margin: 0;
+    }
+    .filtro{
+        display: none;
+    }
+    .mapa__svg{
 
+    }
+    .recheio{
+        margin: 0;
+        padding-inline: auto;
+        padding: 0;
+        height: auto;
+        display: flex;
+    }
+
+    .footer{
+        font-size: 16px;
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        height: 320px;
+        padding: 20px 0 0 0;
+    }
+
+    .footer__painel{
+        z-index: 1;
+    }
+
+}
+
+@media screen and (max-width: 425px){
+    
+    .sobre-os-elementos-main{
+
+        display: block;
+    }
+    .poco2{
+        width: 393px;
+    }
+    .pesquisa1{
+        display: none;
+    }
+    .container-menu{
+        display: block;
+    }
+    .acessibilidade{
+        display: none;
+    }
+    .header2{
+        grid-template-columns: 100% 0 0;
+        text-align: left;
+        font-size: 12px;
+        height: 4vh;
+    }
+    .mapa{
+        width: 100vw;
+        height: 80vh;
+        margin: 0;
+        padding: 0;
+
+    }
+    .filtro{
+        display: none;
+    }
+    .inputPesquisa{
+        display: none;
+    }
+    .btnPesquisa{
+        display: none;
+    }
+    .btnFullscreen{
+        display: none;
+    }
+    .mapa__svg{
+
+    }
+    svg{
+        transform:translate(0, -100px);
+    }
+    /*O DÚVIDA TÁ AQUI*/
+    .duvida{
+        top: 1%;
+        left: 2%;
+        width: 10%;
+        height: 6%;
+        /* border: dashed 2px #000; */
+    }
+     /*O TEXTO TÁ AQUI*/
+    .elementosSelecionados{
+        left: 20%;
+        top: 2.5%;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 1.9vh;
+    }
+    /*O CHECKBOX TÁ AQUI*/
+    .checkbox{
+        flex-direction: row;
+        top: 40em;
+        left: 0em;
+        text-align: center;
+        /* border: dashed 2px #000; */
+    }
+    .switch2{
+        width: 4.1em;
+        height: 2.2em;
+    }
+    .slider:before {
+        height: 1.8em;
+        width: 1.8em;
+    }
+    .checkbox__name{
+        font-size: 25px;
+        left: auto;
+    }
+    .recheio{
+        margin: 0;
+    }
+    .esconder{
+        display: none;
+    }
+    .footer{
+        font-size: 14px;
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        height: 270px;
+        padding: 40px 0 0 0;
+        border-top: 0;
+        border-right: 6px;
+        border-bottom: 6px;
+        border-left: 6px;
+        border-style: solid;
+
+        margin: 0 0 70px 0;
+    }
+    .mapa{
+        border-top: 6px;
+        border-right: 6px;
+        border-bottom: 0;
+        border-left: 6px;
+        border-style: solid;
+
+        height: 89.4vh; 
+    }
     .filtro2{
         position: fixed;
         right: 8px;
         bottom: 75px;
-        width: 360px;
-        height: 60vh;
-
+        width: 409px;
+   
         border-radius: 25px 25px 0 0;
         padding-bottom: 10px;
         z-index: 1;
-    }   
-    
+    }
     .titulo2{
         width: 190px;
         font-size: 25px;
@@ -553,7 +585,7 @@
         height: 38px;
     }
     .btn3{
-
+ 
         width: 155px;
         height: 38.38px;
     }
@@ -563,400 +595,151 @@
     .btn4{
         display: none;
     }
-    
+    .txt2{
+        display: none;
+    }
     .opaco{
         opacity: 85%;   
     }
     .naoOpaco{
         opacity: 100%;
     }
+  
     .footer__painel{
         z-index: 1;
     }
     .btnMenu{
         display: none;
     }
-
+    .pesquisa{
+        left: 2px;
+        top: 290px;
+        width: 409px;
+    }
+    .pesquisa1-desaparecer{
+        display: none;
+    }
     .filtro2-aparecer{
         display: block;
     }
-
-    .tooltip {
-        position: relative;
-    }
-
-    .tooltip:before {
-        content: attr(data-text);
-    
-        position: absolute;
-    
-        bottom: 90%;
-        margin-bottom: 15px;
-    
-        left: 12%;
-        transform: translateX(3%);
-    
-    
-        width: 108px;
-        height: 60px;
-        padding: 15px;
-        border-radius: 8px;
-        border-width: medium;
-        border-style: solid;
-
-        /* border-bottom: 5px solid #ffc518; */
-       
-
-        text-align: center;
-        justify-content: center;
-        font-size: 9px;
-        font-family:'Open Sans', sans-serif;
-        overflow: auto;
-        overflow-x: hidden;
-    
-        display: none;
-    }
-
-    .tooltip:hover:before {
+    .menuSobe{
         display: block;
     }
+}
 
-    .tooltip:after {
-        content: "";
-        position: absolute;
-    
-        bottom: 75%;
-        margin-bottom: 6px;
-    
-        left: calc(70% - 12px);
-        transform: translateX(-40%);
-        rotate: 406deg;
-        
-        border-width: medium;
- 
-    
-        display: none;
-        
-    }
-
-    .tooltip:hover:before, .tooltip:hover:after {
-        display: block;
-    }       
+@media screen and (max-width: 375px){
     
     .pesquisa1{
         display: none;
     }
-    .mapa{
-        width: 100vw;
-        margin: 0;
-  
-    }
-    .filtro{
-        display: none;
-    }
-    .recheio{
-        margin: 0;
-        padding-inline: auto;
-        padding: 0;
-        height: auto;
-        display: flex;
-    }
-
-    .footer{
-        font-size: 16px;
-        display: flex;
-        flex-direction: column;
-        gap: 18px;
-        height: 320px;
-        padding: 20px 0 0 0;
-    }
-
-    .footer__painel{
-        z-index: 1;
-    }
-
-    .txt2-inferior {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
-        font-size: 13px;
-        visibility: hidden;
-        position: relative;
-    }
-    .txt2-inferior::after {
-        visibility: visible;
-        position: absolute;
-        top: 0vh;
-        left: 2vw;
-        content: "Para mais informações acesse o menu abaixo.";
-    }
-
-}
-
-@media screen and (max-width: 430px) {
-    .modal_aviso_Filtro{
-
-        width: 55%;
-
-        height: 28%;
-
-    }
-    
-    .poco2 {
-        width: 393px;
-    }
-    .pesquisa1 {
-        display: none;
-    }
-    .container-menu {
-        display: block;
-    }
-    .acessibilidade {
-        display: none;
-    }
-    .header2 {
-        grid-template-columns: 100% 0 0;
-        text-align: left;
-        font-size: 12px;
-        height: 4vh;
-    }
-    .mapa {
-        width: 100vw;
-        height: 80vh;
-        margin: 0;
-        padding: 0;
-
-        flex-direction: column;
-    }
-
-    .informacoes{
-        width: 100%;
-        height: 60%;
-        margin: 25% 0 0 0;
-    }
-    .filtro {
-        display: none;
-    }
-    .inputPesquisa {
-        display: none;
-    }
-    .btnPesquisa {
-        display: none;
-    }
-    .btnFullscreen {
-        display: none;
-    }
-    .recheio {
-        margin: 0;
-    }
-    .esconder {
-        display: none;
-    }
-    .footer {
-        font-size: 14px;
-        display: flex;
-        flex-direction: column;
-        gap: 25px;
-        height: 270px;
-        padding: 40px 0 0 0;
-        border-top: 0;
-        border-right: 6px;
-        border-bottom: 6px;
-        border-left: 6px;
-        border-style: solid;
-
-        margin: 0 0 70px 0;
-    }
-    .mapa {
-        border-top: 6px;
-        border-right: 6px;
-        border-bottom: 0;
-        border-left: 6px;
-        border-color: var(--verde_claro);
-        border-style: solid;
-
-        height: 89.4vh;
-    }
-    .filtro2 {
-        position: fixed;
-        left: 3vw;
-        bottom: 75px;
-        width: 94vw;
-        height: 55vh;
-
-        border-radius: 25px 25px 0 0;
-        padding-bottom: 10px;
-        z-index: 1;
-    }
-    .titulo2{
-
-        text-align: center;
-        margin-top: 7%;
-        margin-bottom: auto;
-
-    }
-    .tituloNoCentro {
-        display: flex;
-        justify-content: center;
-    }
-    .peneira2 {
-        grid-template-columns: 10% 32% 58%;
-    }
-    .peneira3 {
-        align-items: center;
-    }
-    .peneira3 h3 {
-        text-align: left;
-        font-family: 'Open Sans' sans-serif;
-        font-size: 18px;
-        font-weight: 700;
-
-    }
-    .txt2 {
-        display: block;
-        font-size: 14px;
-    }
-    .txt2-inferior {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
-        font-size: 13px;
-        visibility: hidden;
-        position: relative;
-    }
-    .txt2-inferior::after {
-        visibility: visible;
-        position: absolute;
-        top: 0vh;
-        left: 9.5vw;
-        content: "Para mais informações acesse o menu abaixo.";
-    }
-    .input2 {
-        border-radius: 4px;
-        width: 175px;
-        height: 38px;
-    }
-    .btn3 {
-
-        width: 155px;
-        height: 38.38px;
-    }
-    .peneira4 {
-        grid-template-columns: 45% 55%;
-    }
-    .btn4 {
-        display: none;
-    }
-
-    .footer__painel {
-        z-index: 1;
-    }
-    .btnMenu {
-        display: none;
-    }
-    .pesquisa {
+    .pesquisa{
         left: 2px;
-        align-items: center;
         top: 290px;
-        width: 372px;
+        width: 359px;
     }
-    .pesquisa1-desaparecer {
+    .pesquisa1-desaparecer{
         display: none;
     }
-    .filtro2-aparecer {
+    .filtro2-aparecer{
         display: block;
     }
-    .menuSobe {
+    .menuSobe{
         display: block;
     }
-    .soe-some {
-        display: none;
+    .filtro2{
+        width: 360px;
     }
-    .sobre-os-elementos-main {
-        display: block;
+    .poco2{
+        width: 343px;
     }
-    .elementos2{
-        width: 80vw;
-        box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
-        border-radius: 12px;
-    }
-    .poco{
+    .sobre-os-elementos-main{
 
+        display: block;
     }
-    .elementosSelecionados {
-        left: 20%;
-        top: 4.2%;
+    .elementosSelecionados{
+        left: 14%;
+        top: 3%;
         font-family: 'Open Sans', sans-serif;
         font-weight: bold;
-        font-size: 4.5vw;
+        font-size: 2.0vh;
     }
-    .duvida {
-        top: 3vw;
+}
+
+@media screen and (max-width: 320px){
+    
+    .pesqusia1{
+        display: none;
+    }
+    .pesquisa{
+        left: 2px;
+        top: 290px;
+        width: 304px;
+    }
+    .filtro2{
+        width: 306px;
+        left: 7px;
+        bottom: 0;
+        bottom: 75px;
+    }
+    .filtro2-aparecer{
+        display: block;
+    }
+    .input2{
+        width: 164px;
+    }
+    .pesquisa1-desaparecer{
+        display: none;
+    }
+    .menuSobe{
+        display: block;
+    }
+    .poco2{
+        width: 288px;
+    }
+    .sobre-os-elementos-main{
+
+        display: block;
+    }.elementosSelecionados{
+        left: 19%;
+        top: 4.5%;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: bold;
+        font-size: 2.5vh;
+    }/*////////////////////////////////////////////////////////////////////////////////
+    /*O DÚVIDA TÁ AQUI*/
+    .duvida{
+        top: 1.8%;
         left: 6%;
         width: 8%;
         height: 8%;
         /* border: dashed 2px #000; */
     }
-    .mapa__svg {
-        height: 70vh;
-    }
-    .checkbox {
-        gap: 8vw;
-        position: static;
+    /*O CHECKBOX TÁ AQUI*/
+    .checkbox{
         flex-direction: row;
-        margin: auto;
+        top: 38em;
+        left: 0em;
         text-align: center;
+        padding: 0%;
+        /* border: dashed 2px #000;  */
     }
-    .switch2 {
-        width: 12vw;
-        height: 7vw;
-        justify-content: center;
+    .switch2{
+        width: 2.8em;
+        height: 1.6em;
     }
     .slider:before {
-        height: 5.5vw;
-        width: 5.5vw;
-        transition: .2s;
-        left: 0.3vw;
-        top: 0.35vw;
+        height: 1.2em;
+        width: 1.2em;
     }
-    .checkbox__name {
-        font-size: 5vw;
+    .checkbox__name{
+        top: 0.5em;
+        font-size: 1.8vh;
         left: auto;
     }
-    input:checked+.slider:before {
-        transform: translateX(5vw);
-    }
-
-    .modal_aviso_Filtro{
-        width: 55%;
-        height: 28%;
+    .input:checked + .slider:before {
+        transform: translateX(10px);
     }
 }
 
 
-@media screen and (max-width: 376px){
-    .filtro2{
-        height: 75vh;
-    }   
 
-    .pesquisa {
-        left: 18px;
-        align-items: center;
-        top: 290px;
-        width: 310px;
-    }
-
-    .txt2-inferior {
-        font-family: 'Open Sans', sans-serif;
-        font-weight: 700;
-        font-size: 13px;
-        visibility: hidden;
-        position: relative;
-    }
-    .txt2-inferior::after {
-        visibility: visible;
-        position: absolute;
-        margin: -1rem;
-        top: 0vh;
-        left: 6vw;
-        content: "Para mais informações acesse o menu abaixo.";
-    }
-}

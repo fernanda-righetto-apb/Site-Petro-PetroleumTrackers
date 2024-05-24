@@ -2,6 +2,7 @@ const btnPocos = document.querySelector('#btnPocos');
 const infoPocos = document.querySelector('#info-pocos');
 const elementosSelecionados = document.querySelector('#elementos-selecionados');
 let contadorElementosSelecionados = 0;
+const languageToggle = document.querySelector('#language-toggle')
 
 btnPocos.addEventListener('click', () => {
     if(btnPocos.checked){
@@ -11,12 +12,27 @@ btnPocos.addEventListener('click', () => {
         infoPocos.style.display ='block';
         info.style.backgroundImage="url(img/informacoes.jpg)";
         detalhesPoco.style.display = 'none';
-       elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados += 1} `;
+
+        if(!languageToggle.checked) {
+
+            elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados += 1} `;
+        } else {
+
+            elementosSelecionados.innerHTML = `Selected Elements: ${contadorElementosSelecionados += 1} `;
+        }
+
+
     } else if(btnBlocos.checked || btnCampos.checked || btnBacia.checked) {
 
         poco.style.display = 'none';
         infoPocos.style.display ='none';
-        elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados -= 1}`;   
+        if(!languageToggle.checked) {
+
+            elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados -= 1} `;
+        }  else {
+
+            elementosSelecionados.innerHTML = `Selected Elements: ${contadorElementosSelecionados -= 1} `;
+        }
     } 
     /*else if(btnCampos.checked) {
 
@@ -31,7 +47,13 @@ btnPocos.addEventListener('click', () => {
         info.setAttribute('class', 'informacoes');
         poco.style.display = 'none';
         infoPocos.style.display ='none';
-        elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados -= 1}`;
+        if(!languageToggle.checked) {
+
+            elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados -= 1} `;
+        } else {
+
+            elementosSelecionados.innerHTML = `Selected Elements: ${contadorElementosSelecionados -= 1} `;
+        }
     }
 
     mapMaker.setAttribute('class', 'none');

@@ -14,14 +14,26 @@ btnBacia.addEventListener('click', () => {
         info.setAttribute('class', 'informacoes block');
         info.style.backgroundImage="url(img/informacoes.jpg)";
         infoBacias.style.display = 'block';
-        elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados += 1} `;
+        if(!languageToggle.checked) {
+
+            elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados += 1} `;
+        }  else {
+
+            elementosSelecionados.innerHTML = `Selected Elements: ${contadorElementosSelecionados += 1} `;
+        }
     } else if(btnPocos.checked || btnBlocos.checked || btnCampos.checked) {
 
         icone_bacia_do_panara.style.display = 'none';
         bacia_do_panara.style.display = 'none';
         infoBacias.style.display = 'none';
         detalhesBacias.style.display = 'none';
-        elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados -= 1} `;
+        if(!languageToggle.checked) {
+
+            elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados -= 1} `;
+        }  else {
+
+            elementosSelecionados.innerHTML = `Selected Elements: ${contadorElementosSelecionados -= 1} `;
+        }
     } else {
         
         icone_bacia_do_panara.style.display = 'none';
@@ -29,7 +41,13 @@ btnBacia.addEventListener('click', () => {
         bacia_do_panara.style.display = 'none';
         infoBacias.style.display = 'none';
         detalhesBacias.style.display = 'none';
-        elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados -= 1} `;
+        if(!languageToggle.checked) {
+
+            elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados -= 1} `;
+        }  else {
+
+            elementosSelecionados.innerHTML = `Selected Elements: ${contadorElementosSelecionados -= 1} `;
+        }
     }
 })
 

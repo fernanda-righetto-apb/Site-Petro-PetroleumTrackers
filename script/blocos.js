@@ -12,20 +12,38 @@ btnBlocos.addEventListener('click', () => {
         info.setAttribute('class', 'informacoes block');
         info.style.backgroundImage="url(img/informacoes.jpg)";
         infoBlocos.style.display = 'block';
-        elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados += 10} `;
+        if(!languageToggle.checked) {
+
+            elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados += 10} `;
+        }  else {
+
+            elementosSelecionados.innerHTML = `Selected Elements: ${contadorElementosSelecionados += 10} `;
+        }
     } else if(btnPocos.checked || btnCampos.checked || btnBacia.checked){
 
         blocos.style.display = 'none';
         infoBlocos.style.display = 'none';
         detalhesBlocos.style.display = 'none';
-        elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados -= 10} `;
+        if(!languageToggle.checked) {
+
+            elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados -= 10} `;
+        }  else {
+
+            elementosSelecionados.innerHTML = `Selected Elements: ${contadorElementosSelecionados -= 10} `;
+        }
     } 
     else {
         detalhesBlocos.style.display = 'none';
         infoBlocos.style.display = 'none';
         blocos.style.display = 'none';
         info.setAttribute('class', 'informacoes');
-        elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados -= 10} `;
+        if(!languageToggle.checked) {
+
+            elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados -= 10} `;
+        }  else {
+
+            elementosSelecionados.innerHTML = `Selected Elements: ${contadorElementosSelecionados -= 10} `;
+        }
     }
 });
 

@@ -9,7 +9,7 @@ let contador3 = true;
 function mostraFiltro(){
     
     if(contador3){
-        body.setAttribute('class', 'corDeFundo');
+        //body.setAttribute('class', 'corDeFundo');
         header2.setAttribute('class', 'header2 opaco');
         mapa.setAttribute('class', 'mapa opaco');
         footer.setAttribute('class', 'footer opaco');

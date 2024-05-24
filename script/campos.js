@@ -16,7 +16,13 @@ btnCampos.addEventListener('click', () => {
         info.setAttribute('class', 'informacoes block');
         info.style.backgroundImage="url(img/informacoes.jpg)";
         infoCampos.style.display = 'block';
-        elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados += 1} `;
+        if(!languageToggle.checked) {
+
+            elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados += 1} `;
+        }  else {
+
+            elementosSelecionados.innerHTML = `Selected Elements: ${contadorElementosSelecionados += 1} `;
+        }
     } else if(btnPocos.checked || btnBlocos.checked || btnBacia.checked) {
 
         iconeCampos.style.display = 'none';
@@ -24,7 +30,13 @@ btnCampos.addEventListener('click', () => {
         campos.style.display = 'none';
         infoCampos.style.display = 'none';
         detalhesCampos.style.display = 'none';
-        elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados -= 1} `;
+        if(!languageToggle.checked) {
+
+            elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados -= 1} `;
+        }  else {
+
+            elementosSelecionados.innerHTML = `Selected Elements: ${contadorElementosSelecionados -= 1} `;
+        }
     } else {
 
         iconeCampos.style.display = 'none';
@@ -33,7 +45,13 @@ btnCampos.addEventListener('click', () => {
         campos.style.display = 'none';
         infoCampos.style.display = 'none';
         detalhesCampos.style.display = 'none';
-        elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados -= 1} `;
+        if(!languageToggle.checked) {
+
+            elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados -= 1} `;
+        }  else {
+
+            elementosSelecionados.innerHTML = `Selected Elements: ${contadorElementosSelecionados -= 1} `;
+        }
     }
 })
 
