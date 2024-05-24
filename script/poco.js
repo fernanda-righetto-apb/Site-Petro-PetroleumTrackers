@@ -11,7 +11,7 @@ btnPocos.addEventListener('click', () => {
         infoPocos.style.display ='block';
         info.style.backgroundImage="url(img/informacoes.jpg)";
         detalhesPoco.style.display = 'none';
-       elementosSelecionados.innerHTML = `Elemetos selecionados: ${contadorElementosSelecionados += 1} `;
+       elementosSelecionados.innerHTML = `Elementos selecionados: ${contadorElementosSelecionados += 1} `;
     } else if(btnBlocos.checked || btnCampos.checked || btnBacia.checked) {
 
         poco.style.display = 'none';

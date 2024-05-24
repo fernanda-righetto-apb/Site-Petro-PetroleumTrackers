@@ -33,14 +33,14 @@
         
         <div class="header2" id="header2">
             <div>
-                <h4 class="c2">Você está em: <a style="color: var(--verde_claro)">SITE PETROBRAS</a></h4>
+                <h4 class="c2"><span data-pt="Você está em: " data-en="You are on: ">Você está em: </span><a style="color: var(--verde_claro)" data-pt="SITE PETROBRAS" data-en="PETROBRAS WEBSITE">SITE PETROBRAS</a></h4>
             </div>
 
             <div></div>
 
             <div class="acessibilidade">
                 <div class="switch">
-                    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox">
+                    <input id="language-toggle" class="check-toggle check-toggle-round-flat" type="checkbox" onclick="switchLanguage()">
                     <label for="language-toggle"></label>
                     <span class="on">PT</span>
                     <span class="off">EN</span>
@@ -71,12 +71,12 @@
 
             <div>
                 <section class="grid grid-template-columns-1">
-                    <h6 class="item"><a href="https://petrobras.com.br/pt/quem-somos/">Quem Somos</a></h6>
-                    <h6 class="item"><a href="https://petrobras.com.br/pre-sal/">Pré-Sal</a></h6>
-                    <h6 class="item"><a href="https://petrobras.com.br/pt/sociedade-e-meio-ambiente/">Sustentabilidade</a></h6>
-                    <h6 class="item"><a href="https://tecnologia.petrobras.com.br/?_ga=2.16318134.183531101.1695930852-473754522.1695930852&_gl=1*gz2mg4*_ga*NDczNzU0NTIyLjE2OTU5MzA4NTI.*_ga_9TG5WL85H3*MTY5NTkzMDg1Mi4xLjEuMTY5NTkzMTI5Ni4zMy4wLjA.">Tecnologia e Inovação</a></h6>
-                    <h6 class="item"><a href="https://transparencia.petrobras.com.br/?_gl=1*2porjz*_ga*NDczNzU0NTIyLjE2OTU5MzA4NTI.*_ga_9TG5WL85H3*MTY5NTkzMDg1Mi4xLjEuMTY5NTkzMTMxMi4xNy4wLjA.">Acesso à Informação</a></h6>
-                    <h6 class="item"><a href="https://www.investidorpetrobras.com.br/?_ga=2.82025366.183531101.1695930852-473754522.1695930852&_gl=1%2A1j4c6ba%2A_ga%2ANDczNzU0NTIyLjE2OTU5MzA4NTI.%2A_ga_9TG5WL85H3%2AMTY5NTkzMDg1Mi4xLjEuMTY5NTkzMTMyMy42LjAuMA..">Investidores</a></h6>
+                    <h6 class="item" data-pt="Quem Somos" data-en="About us"><a href="https://petrobras.com.br/pt/quem-somos/">Quem Somos</a></h6>
+                    <h6 class="item" data-pt="Pré-Sal" data-en="Pre-salt"><a href="https://petrobras.com.br/pre-sal/">Pré-Sal</a></h6>
+                    <h6 class="item" data-pt="Sustentabilidade" data-en="Sustainability"><a href="https://petrobras.com.br/pt/sociedade-e-meio-ambiente/">Sustentabilidade</a></h6>
+                    <h6 class="item" data-pt="Inovação e Tecnologia" data-en="Innovation and Technology"><a href="https://tecnologia.petrobras.com.br/?_ga=2.16318134.183531101.1695930852-473754522.1695930852&_gl=1*gz2mg4*_ga*NDczNzU0NTIyLjE2OTU5MzA4NTI.*_ga_9TG5WL85H3*MTY5NTkzMDg1Mi4xLjEuMTY5NTkzMTI5Ni4zMy4wLjA.">Tecnologia e Inovação</a></h6>
+                    <h6 class="item" data-pt="Acesso a informação" data-en="Access To Information"><a href="https://transparencia.petrobras.com.br/?_gl=1*2porjz*_ga*NDczNzU0NTIyLjE2OTU5MzA4NTI.*_ga_9TG5WL85H3*MTY5NTkzMDg1Mi4xLjEuMTY5NTkzMTMxMi4xNy4wLjA.">Acesso à Informação</a></h6>
+                    <h6 class="item" data-pt="Investidores" data-en="Investors"><a href="https://www.investidorpetrobras.com.br/?_ga=2.82025366.183531101.1695930852-473754522.1695930852&_gl=1%2A1j4c6ba%2A_ga%2ANDczNzU0NTIyLjE2OTU5MzA4NTI.%2A_ga_9TG5WL85H3%2AMTY5NTkzMDg1Mi4xLjEuMTY5NTkzMTMyMy42LjAuMA..">Investidores</a></h6>
                 </section>
             </div>
         </div>
@@ -91,22 +91,22 @@
             <div class="btn_x"><button onclick="modalFecha()"><img src="x.png" style="height: 50px;"></button></div>
 
             <div class="modal_recheio">
-                <div class="img_txt"><h1 class="h1">POÇOS</h1> <img src="img/modal_img1.svg" alt="" ></div>
+                <div class="img_txt"><h1 class="h1" data-pt="Poços" data-en="WELLS">POÇOS>POÇOS</h1> <img src="img/modal_img1.svg" alt="" ></div>
                 <div class="cinza"><h4 class="h4">Perfuração na superficie terrestre utilizada para extração e produção de petróleo</h4></div>
 
-                <div class="img_txt" ><h1 class="h1">BLOCOS</h1><img src="img/modal_img2.svg" alt=""></div>
+                <div class="img_txt" ><h1 class="h1" data-pt="Blocos" data-en="BLOCKS">BLOCOS</h1><img src="img/modal_img2.svg" alt=""></div>
                 <div class="cinza"><h4 class="h4">Nome do bloco exploratório onde se situa o poço (quando aplicável).</h4></div>
 
-                <div class="img_txt" ><h1 class="h1">CAMPOS</h1><img src="img/modal_img3.svg" alt=""></div>
+                <div class="img_txt" ><h1 class="h1" data-pt="Campos" data-en="FIELDS">CAMPOS</h1><img src="img/modal_img3.svg" alt=""></div>
                 <div class="cinza"><h4 class="h4">Nome do campo de produção onde se situa o poço (quando aplicável).</h4></div>
 
-                <div class="img_txt" ><h1 class="h1">BACIAS</h1><img src="img/modal_img4.svg" alt=""></div>
+                <div class="img_txt" ><h1 class="h1" data-pt="Bacias" data-en="BASIN">BACIAS</h1><img src="img/modal_img4.svg" alt=""></div>
                 <div class="cinza"><h4 class="h4">Nome da bacia sedimentar onde se situa o poço.</h4></div>
 
-                <div class="img_txt" ><h1 class="h1">OPERADOR</h1><img src="img/modal_img5.svg" alt=""></div>
+                <div class="img_txt" ><h1 class="h1" data-pt="Operador" data-en="OPERATOR">OPERADOR</h1><img src="img/modal_img5.svg" alt=""></div>
                 <div class="cinza"><h4 class="h4">Nome fantasia do operador (concessionário), ou seja, é a empresa responsável pelo poço.</h4></div>
 
-                <div class="img_txt" ><h1 class="h1">CATEGORIA</h1><img src="img/modal_img6.svg" alt=""></div>
+                <div class="img_txt" ><h1 class="h1" data-pt="Categoria" data-en="CATEGORY-DESCRIPTION">CATEGORIA</h1><img src="img/modal_img6.svg" alt=""></div>
                 <div class="cinza"><h4 class="h4">Finalidade principal original do poço. Há dez categorias!</h4></div>
                 <div class="cinza" style="padding: 10px; margin-bottom: 30px; height: 400px; overflow: scroll;"><h4 class="h4">
                     - Poço Exploratório Estratigráfico, identificado com o código 2, é o poço que visa a conhecer a coluna estratigráfica e obter outras informações geológicas de subsuperfície em uma bacia ou região pouco explorada;<br><br>
@@ -124,25 +124,25 @@
                     - Poço de Estocagem, identificado com o código 10, é aquele que visa a permitir operações de estocagem de gás natural, incluindo injeção, retirada e monitoramento.
                 </h4></div>
 
-                <div class="img_txt" ><h1 class="h1">MATERIAL</h1><img src="img/modal_img7.svg" alt=""></div>
-                <div class="cinza"><h4 class="h4">Tipo de material, isto é, fluído a ser produzido/extraído do poço: gás natual ou óleo.</h4></div>
+                <div class="img_txt" ><h1 class="h1" data-pt="TERRA_MAR" data-en="SEA_LAND">TERRA_MAR</h1><img src="img/modal_img7.svg" alt=""></div>
+                <div class="cinza"><h4 class="h4">Localização dos poços, em região marítima ou terrestre.</h4></div>
 
-                <div class="img_txt" ><h1 class="h1">SITUAÇÃO</h1><img src="img/modal_img8.svg" alt=""></div>
+                <div class="img_txt" ><h1 class="h1" data-pt="Situação" data-en="SITUATION">SITUAÇÃO</h1><img src="img/modal_img8.svg" alt=""></div>
                 <div class="cinza"><h4 class="h4">Qualificação do poço de acordo com o estado mecânico atual e condição operacional. Exemplo: fechado, aberto, ativo, desativado</h4></div>
 
-                <div class="img_txt" ><h1 class="h1">ESTADO</h1><img src="img/modal_img9.svg" alt=""></div>
+                <div class="img_txt" ><h1 class="h1" data-pt="Estado" data-en="STATE">ESTADO</h1><img src="img/modal_img9.svg" alt=""></div>
                 <div class="cinza"><h4 class="h4">Local onde estão situados os poços, blocos, bacias e campos (quando aplicável).</h4></div>
 
-                <div class="img_txt" ><h1 class="h1">NOME</h1><img src="img/modal_img10.svg" alt=""></div>
-                <div class="cinza"><h4 class="h4">Nome do poço para a ANP, definido de acordo com a Resolução ANP nº 699/2017.É um conjunto de símbolos alfanuméricos que identifica o poço em relatórios, mapas edemais documentos.</h4></div>
+                <!-- <div class="img_txt" ><h1 class="h1">NOME</h1><img src="img/modal_img10.svg" alt=""></div>
+                <div class="cinza"><h4 class="h4">Nome do poço para a ANP, definido de acordo com a Resolução ANP nº 699/2017.É um conjunto de símbolos alfanuméricos que identifica o poço em relatórios, mapas edemais documentos.</h4></div> -->
 
                 <DIV  class="final">
-                    <h1 class="h1" style="text-align: center;">MAIS INFORMAÇÕES</h1>
-                    <div ><h1 class="h1-2" style="border: none; text-align: center;" >EXPLORAÇÃO E PRODUÇÃO</h1></div>
-                    <div class="cinza"><h4 class="h4" style="text-align: center;" onclick="location.href='https://www.petrobras.com.br/quem-somos/exploracao-e-producao';">Clique aqui para saber mais!</h4></div>
+                    <h1 class="h1" style="text-align: center;" data-pt="MAIS INFORMAÇÕES" data-en="MORE INFORMATION">MAIS INFORMAÇÕES</h1>
+                    <div ><h1 class="h1-2" style="border: none; text-align: center;" data-pt="Exploração e Produção" data-en="EXPLORATION AND PRODUCTION">EXPLORAÇÃO E PRODUÇÃO</h1></div>
+                    <div class="cinza"><h4 class="h4" style="text-align: center; cursor: pointer;" onclick="location.href='https://www.petrobras.com.br/quem-somos/exploracao-e-producao';"  data-pt="Clique aqui para saber mais!" data-en="Click here to know more" >Clique aqui para saber mais!</h4></div>
 
-                    <div ><h1 class="h1-2" style="border: none; text-align: center;" >ENTENDENDO O PRÉ SAL</h1></div>
-                    <div class="cinza"><h4 class="h4" style="text-align: center;"  onclick="location.href='https://www.petrobras.com.br/pre-sal';">Clique aqui para saber mais!</h4></div>
+                    <div ><h1 class="h1-2" style="border: none; text-align: center;" data-pt="ENTENDENDO O PRÉ-SAL" data-en="ABOUT THE PRE-SALT" >ENTENDENDO O PRÉ SAL</h1></div>
+                    <div class="cinza"><h4 class="h4" style="text-align: center; cursor: pointer;"  onclick="location.href='https://www.petrobras.com.br/pre-sal';" data-pt="Clique aqui para saber mais!" data-en="Click here to know more" >Clique aqui para saber mais!</h4></div>
                 </DIV>
             
             </div>
@@ -258,43 +258,43 @@
                                 <input type="checkbox" id="btnPocos">
                                 <span class="slider"></span>
                             </label>
-                            <label class="checkbox__name">Poços</label>
+                            <label class="checkbox__name" data-pt="Poços" data-en="Wells">Poços</label>
                         </div>
                         <div>
                             <label class="switch2">
                                 <input type="checkbox" id="btn-blocos">
                                 <span class="slider"></span>
                             </label>
-                            <label class="checkbox__name">Blocos</label>
+                            <label class="checkbox__name" data-pt="Blocos" data-en="Blocks">Blocos</label>
                         </div>
                         <div>
                             <label class="switch2">
                                 <input id="btn-campos" type="checkbox">
                                 <span class="slider"></span>
                             </label>
-                            <label class="checkbox__name">Campos</label>
+                            <label class="checkbox__name" data-pt="Campos" data-en="Fields">Campos</label>
                         </div>
                         <div>
                             <label class="switch2">
                                 <input id="btnBacia" type="checkbox">
                                 <span class="slider"></span>
                             </label>
-                            <label class="checkbox__name">Bacias</label>
+                            <label class="checkbox__name" data-pt="Bacias" data-en="Basin">Bacias</label>
                         </div>
                     </div>
 
-                    <label class="elementosSelecionados" id="elementos-selecionados">Elementos selecionados: 0</label>
+                    <label class="elementosSelecionados" id="elementos-selecionados" data-pt="Elementos Selecionados: 0" data-en="Selected Elements: 0">Elementos selecionados: 0</label>
                     <img class="btnFullscreen" id="btnFullscreen" src="img/image-44.png"></img>
                    
                     
 
-                    <img src="img/filtro.png" class="img__filtro" id="imgFiltro">
+                    <img src="img/filtro.png" class="img__filtro" id="imgFiltro" data-img-pt="img/filtro.png" data-img-en="img/filtro-en.png">
                     <button  ><img src="img/Group 2.svg" class="duvida" onclick="AbreModalInfos()" ></button>
 
                     <!-- Filtro do Mapa em Zoom -->
                     <div class="filtro2 filtro3" id="filtro3">
                         <div class="tituloNoCentro">
-                        <h1 class="titulo2">FILTRAR POR</h1>
+                        <h1 class="titulo2" data-pt="FILTRAR POR" data-en="FILTER BY">FILTRAR POR</h1>
                         </div>
                         <h4 class="txt2 busca">Preencha os campos abaixo de acordo com sua necessidade de busca.</h4>
                         <div class="peneira2 peneira3">
@@ -340,7 +340,7 @@
                         </div>
                     </div>
                     <!-- Filtro do Mapa em Zoom -->
-
+                    
                     </div>
                     <div class="informacoes" id="info">
                         <button id="fechaInfo">VOLTAR</button>
@@ -416,14 +416,15 @@
                     <div class="pesquisa1" id="pesquisa1">
                         <div class="pesquisa">
                             <img src="img/Vector.png" id="imgPesquisa">
-                            <input placeholder="Pesquisar..." type="text" class="filtro-pesquisa">
+                            <!-- <input placeholder="Pesquisar..." type="text" class="filtro-pesquisa" id="searchInput"> -->
+                            <input type="text" class="filtro-pesquisa" id="searchInput" data-pt="Pesquisar..." data-en="Search...">
                             <img src="img/voice 1.png">
                         </div>
                     </div>
                 </div>
                     <div class="filtro2" id="filtro2">
                         <div class="tituloNoCentro">
-                        <h1 class="titulo2">FILTRAR POR</h1>
+                        <h1 class="titulo2" data-pt="FILTRAR POR" data-en="FILTER BY">FILTRAR POR</h1>
                         </div>
                         <h4 class="txt2 busca">Preencha os campos abaixo de acordo com sua necessidade de busca.</h4>
                         <div class="peneira2 peneira3">
@@ -474,31 +475,31 @@
             <div class="esconder"></div>
         <!-- FILTRO INPUTS E DO LADO DIREITO AO LADO DO MAPA -->
             <div class="filtro" id="filtro">
-                <h1 class="titulo" style="color: var(--verde_claro)">FILTRAR POR</h1>
-                <h4 class="txt">Preencha os campos abaixo de acordo com sua necessidade de busca.</h4>
+                <h1 class="titulo" style="color: var(--verde_claro)" data-pt="FILTRAR POR" data-en="FILTER BY">FILTRAR POR</h1>
+                <h4 class="txt" data-pt="Preencha os campos abaixo de acordo com sua necessidade de busca." data-en="Fill in the fields below according to your search needs.">Preencha os campos abaixo de acordo com sua necessidade de busca.</h4>
                 <div class="peneira">
-                    <h3>Operador</h3><input class="input" type="text" id="filtro-operador">
+                    <h3 data-pt="Operador" data-en="Operator">Operador</h3><input class="input" type="text" id="filtro-operador">
                 </div>
                 <div class="peneira">
-                    <h3>Tipo</h3><input class="input" type="text" id="filtro-tipo">
+                    <h3 data-pt="Tipo" data-en="Description">Tipo</h3><input class="input" type="text" id="filtro-tipo">
                 </div>
                 <div class="peneira">
                     
-                    <h3>Terra_Mar</h3>
+                    <h3 data-pt="TERRA_MAR" data-en="SEA_LAND">Terra_Mar</h3>
                     <select class="input" id="filtro-terra-mar">
-                        <option>Selecione a opção</option>
-                        <option>T</option>
-                        <option>M</option>
+                        <option data-pt="Selecione a opção" data-en="Select the option">Selecione a opção</option>
+                        <option data-pt="T" data-en="L">T</option>
+                        <option data-pt="M" data-en="S">M</option>
                     </select>
                     <!-- <input class="input" type="text" id="filtro-terra-mar"> -->
                 </div>
                 <div class="peneira">
-                    <h3>Situação</h3><input class="input" type="text" id="filtro-situacao">
+                    <h3 data-pt="Situação" data-en="Situation">Situação</h3><input class="input" type="text" id="filtro-situacao">
                 </div>
                 <div class="peneira">
-                    <h3>Estado</h3>
+                    <h3 data-pt="Estado" data-en="State">Estado</h3>
                     <select class="input" id="filtro-estado">
-                        <option>Selecione a opção</option>
+                        <option data-pt="Selecione a opção" data-en="Select the option">Selecione a opção</option>
                         <option>Rio de Janeiro - RJ</option>
                         <option>Paraná - PR</option>
                     </select>
@@ -507,13 +508,13 @@
 
                 <div class="peneira">
                     <div></div>
-                    <button  class="btn" id="btn-filtrar">filtrar</button>
+                    <button  class="btn" id="btn-filtrar" data-pt="filtrar" data-en="filter">filtrar</button>
                 </div>
 
-
-                <h4 class="txt">Para informações sobre os <a style="color: var(--verde_claro)">Poços, Blocos, Campos</a> e <a style="color: var(--verde_claro)">Bacias</a> clique abaixo.</h4>
+                
+                <h4 class="txt"><span  data-pt="Para informações sobre os " data-en="For information about ">Para informações sobre os </span><a style="color: var(--verde_claro)" data-pt="Poços, Blocos, Campos" data-en="Wells, Blocks, Fields">Poços, Blocos, Campos</a>  <span data-pt="e" data-en="and">e</span> <a style="color: var(--verde_claro)" data-pt="Bacias" data-en="Basin">Bacias</a> <span data-pt="clique abaixo" data-en="click below">clique abaixo.</span></h4>
                 <div class="btn_container">
-                    <button onclick="modalAbre()" class="btn2">infos</button>
+                    <button onclick="modalAbre()" class="btn2" data-pt="infos" data-en="info">infos</button>
                 </div>
             </div>
             
@@ -546,7 +547,7 @@
             <div style="display: grid">
                 <div class="inicio" id="inicio">
                     <button onclick="sobeMenu2(0)"><img src="img/x.png" alt=""></button>
-                    <h1 id="titulo">Navegue nas Seções:</h1>
+                    <h1 id="titulo" data-pt="Navegue nas Seções:" data-en="Browse the Sections">Navegue nas Seções:</h1>
                 </div>
                  
      
@@ -554,40 +555,40 @@
                 <nav class="nav">  
                     <div style="width: 100%;  border-left: 6px solid  var(--amarelo);">
                         
-                        <button class="btn_filtroSobe" onclick="location.href='https://petrobras.com.br/com';" ><span class="span">Início</span></button>              
+                        <button class="btn_filtroSobe" onclick="location.href='https://petrobras.com.br/com';" ><span class="span" data-pt="Início" data-en="Home">Início</span></button>              
                     </div>
-                        <button class="btn_filtroSobe" onclick="location.href='https://petrobras.com.br/energia-em-transformacao';"><span class="span">Energia em Transformação</span></button> 
+                        <button class="btn_filtroSobe" onclick="location.href='https://petrobras.com.br/energia-em-transformacao';"><span class="span" data-pt="Energia em Transformação" data-en="Energy in Transformation">Energia em Transformação</span></button> 
                   
-                        <button class="btn_filtroSobe" onclick="filtro('Sustentabilidade')" ><span class="span">Sustentabilidade +</span></button>               
+                        <button class="btn_filtroSobe" onclick="filtro('Sustentabilidade')" ><span class="span" data-pt="Sustentabilidade +" data-en="Sustainability +">Sustentabilidade +</span></button>               
                         <ul class="slide" id="Sustentabilidade">
-                          <li class="li"><a href="https://petrobras.com.br/sustentabilidade/meio-ambiente">Tudo sobre Meio Ambiente</a></li> 
-                          <li class="li"><a href="https://petrobras.com.br/sustentabilidade/mudancas-climaticas">Mudanças Climáticas</a></li>
-                          <li class="li"><a href="https://petrobras.com.br/sustentabilidade/responsabilidade-social">Responsabilidade Social</a></li>
-                          <li class="li"><a href="https://petrobras.com.br/sustentabilidade/governanca-corporativa">Governança Corporativa</a></li>
-                          <li class="li"><a href="https://petrobras.com.br/sustentabilidade/patrocinios">Nossos Patrocínios</a></li>
-                          <li class="li"><a href="https://petrobras.com.br/sustentabilidade/relatorios-anuais">Relatórios Anuais</a></li>
+                          <li class="li"><a href="https://petrobras.com.br/sustentabilidade/meio-ambiente"  data-pt="Tudo sobre Meio Ambiente" data-en="All about Environment">Tudo sobre Meio Ambiente</a></li> 
+                          <li class="li"><a href="https://petrobras.com.br/sustentabilidade/mudancas-climaticas" data-pt="Mudanças Climáticas" data-en="Climate Change">Mudanças Climáticas</a></li>
+                          <li class="li"><a href="https://petrobras.com.br/sustentabilidade/responsabilidade-social" data-pt="Responsabilidade Social" data-en="Social Responsability">Responsabilidade Social</a></li>
+                          <li class="li"><a href="https://petrobras.com.br/sustentabilidade/governanca-corporativa" data-pt="Governança Corporativa" data-en="Corporate Governance">Governança Corporativa</a></li>
+                          <li class="li"><a href="https://petrobras.com.br/sustentabilidade/patrocinios" data-pt="Nossos Patrocínios" data-en="Our Sponsorships">Nossos Patrocínios</a></li>
+                          <li class="li"><a href="https://petrobras.com.br/sustentabilidade/relatorios-anuais" data-pt="Relatórios Anuais" data-en="Annual Reports">Relatórios Anuais</a></li>
                         </ul>
     
-                        <button class="btn_filtroSobe" onclick="filtro('Inovação e Tecnologia')" ><span class="span">Inovação e Tecnologia +</span></button>               
+                        <button class="btn_filtroSobe" onclick="filtro('Inovação e Tecnologia')" ><span class="span" data-pt="Inovação e Tecnologia +" data-en="Innovation and Technology +">Inovação e Tecnologia +</span></button>               
                         <ul class="slide" id="Inovação e Tecnologia">
-                          <li class="li"><a href="https://petrobras.com.br/inovacao-e-tecnologia">Inovação e Tecnologia</a></li> 
-                          <li class="li"><a href="https://petrobras.com.br/inovacao-e-tecnologia/centro-de-pesquisa">Centro de Pesquisa</a></li>
-                          <li class="li"><a href="https://petrobras.com.br/inovacao-e-tecnologia/patentes">Patentes</a></li>
-                          <li class="li"><a href="https://petrobras.com.br/inovacao-e-tecnologia/inovacao-aberta">Inovação Aberta</a></li>
+                          <li class="li"><a href="https://petrobras.com.br/inovacao-e-tecnologia" data-pt="Inovação e Tecnologia" data-en="Innovation and Technology">Inovação e Tecnologia</a></li> 
+                          <li class="li"><a href="https://petrobras.com.br/inovacao-e-tecnologia/centro-de-pesquisa" data-pt="Centro de Pesquisa" data-en="Research Center">Centro de Pesquisa</a></li>
+                          <li class="li"><a href="https://petrobras.com.br/inovacao-e-tecnologia/patentes" data-pt="Patentes" data-en="Patents">Patentes</a></li>
+                          <li class="li"><a href="https://petrobras.com.br/inovacao-e-tecnologia/inovacao-aberta" data-pt="Inovação Aberta" data-en="Open Inovation">Inovação Aberta</a></li>
                          
                         </ul>   
                         
-                        <button class="btn_filtroSobe" onclick="location.href='https://petrobras.com.br/pre-sal';"><span class="span">Pré-Sal</span></button> 
+                        <button class="btn_filtroSobe" onclick="location.href='https://petrobras.com.br/pre-sal';"><span class="span" data-pt="Pré-Sal" data-en="Pre-salt">Pré-Sal</span></button> 
     
-                        <button class="btn_filtroSobe" onclick="location.href='https://petrobras.com.br/negocios';"><span class="span">Negócios</span></button> 
+                        <button class="btn_filtroSobe" onclick="location.href='https://petrobras.com.br/negocios';"><span class="span" data-pt="Negócios" data-en="Business">Negócios</span></button> 
                         
-                        <button class="btn_filtroSobe" onclick="filtro('Quem Somos')" ><span class="span">Quem Somos +</span></button>               
+                        <button class="btn_filtroSobe" onclick="filtro('Quem Somos')" ><span class="span" data-pt="Quem Somos +" data-en="About us +">Quem Somos +</span></button>               
                         <ul class="slide" id="Quem Somos">
-                          <li class="li"><a href="https://petrobras.com.br/quem-somos/perfil">Sobre a Petrobras</a></li> 
-                          <li class="li"><a href="https://petrobras.com.br/quem-somos/trajetoria">Trajetória</a></li>
-                          <li class="li"><a href="https://petrobras.com.br/jornada-da-energia">O Que Fazemos</a></li>
-                          <li class="li"><a href="https://petrobras.com.br/quem-somos/produtos">Produtos</a></li>
-                          <li class="li"><a href="https://petrobras.com.br/quem-somos/liderancas">Pessoas</a></li>
+                          <li class="li"><a href="https://petrobras.com.br/quem-somos/perfil" data-pt="Sobre a Petrobras" data-en="About Petrobras">Sobre a Petrobras</a></li> 
+                          <li class="li"><a href="https://petrobras.com.br/quem-somos/trajetoria" data-pt="Trajetória" data-en="History of Petrobras">Trajetória</a></li>
+                          <li class="li"><a href="https://petrobras.com.br/jornada-da-energia" data-pt="O que fazemos" data-en="What we do">O Que Fazemos</a></li>
+                          <li class="li"><a href="https://petrobras.com.br/quem-somos/produtos" data-pt="Produtos" data-en="Products">Produtos</a></li>
+                          <li class="li"><a href="https://petrobras.com.br/quem-somos/liderancas" data-pt="Pessoas" data-en="People">Pessoas</a></li>
                          
                         </ul>
                         <button class="btn_filtroSobe" id="sobreOsElementos1"><span class="span">Sobre os Elementos</span></button>             
@@ -662,8 +663,8 @@
             </div>
                 
             <div class="footer__painel">
-                <div><img src="img/lupa.png" class="imgfiltro_menu" id="imgfiltro_menu2"><p id="filtro">Pesquisar</p></div>
-                <div><img src="img/filtro2.png" class="imgfiltro_menu" id="imgfiltro_menu"><p id="filtro">Filtragem</p></div>
+                <div><img src="img/lupa.png" class="imgfiltro_menu" id="imgfiltro_menu2"><p id="filtro" data-pt="Pesquisar" data-en="Search">Pesquisar</p></div>
+                <div><img src="img/filtro2.png" class="imgfiltro_menu" id="imgfiltro_menu"><p id="filtro" data-pt="Filtragem" data-en="Filter">Filtragem</p></div>
             </div>
         </section>
 
@@ -671,13 +672,13 @@
 
     <div class="footer" id="footer">
         <div class="footer_caixa">
-            <p>Definições de  cookies</p>
-            <p>Privacidade e Dados Pessoas</p>
-            <p>Acessibilidade</p>
-            <p>Sitemap</p>
+            <p data-pt="Definições de cookies" data-en="Cookies Settings">Definições de  cookies</p>
+            <p data-pt="Privacidade e Dados Pessoais" data-en="Privacy and Personal Data">Privacidade e Dados Pessoas</p>
+            <p data-pt="Acessibilidade" data-en="Accessibility">Acessibilidade</p>
+            <p data-pt="Sitemap" data-en="Sitemap">Sitemap</p>
         </div>
         <div class="Copyright">
-            <p class="corDiferenteFooter">&copy; Copyright Petroleum Tackers 2023. Todos os direitos reservados.</p>
+            <p class="corDiferenteFooter" data-pt="Copyright Petroleum Tackers 2023. Todos os direitos reservados." data-en="Copyright Petroleum Trackers 2023. All rights reserved.">&copy; Copyright Petroleum Tackers 2023. Todos os direitos reservados.</p>
         </div>
     </div>
     <script src="js.js"></script>
@@ -698,5 +699,6 @@
     <script src="script/zoom.js"></script>
     <script src="script/poco.js"></script>
     <script src="script/over.js"></script>
+    <script src="script/translateLanguage.js"></script>
 </body>
 </html>

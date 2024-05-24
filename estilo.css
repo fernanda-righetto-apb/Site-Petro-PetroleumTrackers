@@ -295,10 +295,10 @@ transform: scaleX(1);
     -ms-border-radius: 52px;
     -o-border-radius: 52px;
     border-radius: 52px;
-    -webkit-transition: margin 0.2s;
-    -moz-transition: margin 0.2s;
-    -o-transition: margin 0.2s;
-    transition: margin 0.2s;
+    -webkit-transition: margin 0.6s;
+    -moz-transition: margin 0.6s;
+    -o-transition: margin 0.6s;
+    transition: margin 0.6s;
   }
   
   
