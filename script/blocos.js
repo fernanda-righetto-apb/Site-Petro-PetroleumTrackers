@@ -2,6 +2,7 @@ const btnBlocos = document.querySelector('#btn-blocos');
 const blocos = document.querySelector('#blocos');
 const infoBlocos = document.querySelector('#info-blocos');
 const detalhesBlocos = document.querySelector('.detalhesBlocos')
+const infoBlocosH6 = document.querySelector('info-blocos-h6')
 
 btnBlocos.addEventListener('click', () => {
 
@@ -55,4 +56,7 @@ blocos.addEventListener('click', () => {
     infoPocos.style.display = 'none';
     infoBlocos.style.display = 'none';
     detalhesBlocos.style.display = 'block';
+    infoPocosH6.style.display = 'none';
+    infoCampos.style.display = 'none';
+    infoBacias.style.display =  'none';
 })

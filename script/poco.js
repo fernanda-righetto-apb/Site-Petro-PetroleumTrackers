@@ -71,4 +71,7 @@ poco.addEventListener('click', () => {
     icone_bacia_do_panara.style.display = 'none';
     infoPocos.style.display = 'none';
     detalhesPoco.style.display = 'block';
+    infoBlocos.style.display = 'none';
+    infoCampos.style.display = 'none';
+    infoBacias.style.display =  'none';
 });

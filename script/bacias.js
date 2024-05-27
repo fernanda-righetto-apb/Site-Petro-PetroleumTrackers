@@ -76,6 +76,9 @@ icone_bacia_do_panara.addEventListener('click', () => {
     infoPocos.style.display = 'none';
     infoBacias.style.display =  'none';
     detalhesBacias.style.display = 'block';
+    infoPocosH6.style.display = 'none';
+    infoBlocos.style.display = 'none';
+    infoCampos.style.display = 'none';
 });
 
 

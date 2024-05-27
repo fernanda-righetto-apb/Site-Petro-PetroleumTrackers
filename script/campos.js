@@ -67,4 +67,7 @@ iconeCampos.addEventListener('click', () => {
     infoPocos.style.display = 'none';
     infoCampos.style.display = 'none';
     detalhesCampos.style.display = 'block';
+    infoPocosH6.style.display = 'none';
+    infoBlocos.style.display = 'none';
+    infoBacias.style.display =  'none';
 })
